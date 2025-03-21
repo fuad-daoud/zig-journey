@@ -1,1 +1,6 @@
 **/.zig-cache/
+**/zig-out/
+**/answers/
+**/patches/healed/
+**/output/
+**/.progress.txt
