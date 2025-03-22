@@ -61,6 +61,5 @@ pub fn main() void {
         // code at compile time. Guess we're compiler writers
         // now. See? The wizard hat was justified after all.
     }
-
     print("{}\n", .{value});
 }

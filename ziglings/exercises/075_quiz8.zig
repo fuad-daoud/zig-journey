@@ -49,7 +49,11 @@ const Path = struct {
 //
 // Please fill in the body of this function!
 fn makePath(from: *Place, to: *Place, dist: u8) Path {
-
+    return Path{
+        .from = from,
+        .to = to,
+        .dist = dist,
+    };
 }
 
 // Using our new function, these path definitions take up considerably less
@@ -60,8 +64,7 @@ const c_paths = [_]Path{ makePath(&c, &d, 3), makePath(&c, &e, 2) };
 const d_paths = [_]Path{ makePath(&d, &b, 1), makePath(&d, &c, 3), makePath(&d, &f, 7) };
 const e_paths = [_]Path{ makePath(&e, &c, 2), makePath(&e, &f, 1) };
 const f_paths = [_]Path{makePath(&f, &d, 7)};
-//
-// But is it more readable? That could be argued either way.
+
 //
 // We've seen that it is possible to parse strings at compile
 // time, so the sky's really the limit on how fancy we could get
